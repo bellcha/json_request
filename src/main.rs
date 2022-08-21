@@ -71,7 +71,6 @@ async fn main() -> Result<(), reqwest::Error>{
         .json()
         .await?;
 
-        //println!("{:#?}", bank_data);
         for i in bank_data.data{
 
             if i.data.asset > 600000{
